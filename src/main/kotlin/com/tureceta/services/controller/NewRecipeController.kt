@@ -13,7 +13,7 @@ class NewRecipeController {
     lateinit var recipesService: RecipesService
 
     @GetMapping("/new")
-    fun new(name: String, description: String, ingredients: Array<Ingredients>): String {
+    fun new(name: String, description: String, ingredients: List<Ingredients>): String {
        return recipesService.new(name, description, ingredients)
 
       }
