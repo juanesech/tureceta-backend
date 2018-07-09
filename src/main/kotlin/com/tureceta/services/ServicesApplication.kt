@@ -1,11 +1,11 @@
 package com.tureceta.services
 
+import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ServicesApplication
+class TurecetaApplication
 
 fun main(args: Array<String>) {
-    runApplication<ServicesApplication>(*args)
+    SpringApplication.run(TurecetaApplication::class.java, *args)
 }
