@@ -1,0 +1,1 @@
+db.recetas.find({"ingredientes": {$elemMatch:{ name:"arroz", name: "canela"}}})
