@@ -1,1 +1,2 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e4dc2be901264b0fb0bc933aa6a468e8)](https://app.codacy.com/app/juanesech/tureceta-backend?utm_source=github.com&utm_medium=referral&utm_content=juanesech/tureceta-backend&utm_campaign=badger)
 [![wercker status](https://app.wercker.com/status/cabe07c62c96aadf9a7f66c8243b123b/m/master "wercker status")](https://app.wercker.com/project/byKey/cabe07c62c96aadf9a7f66c8243b123b)
