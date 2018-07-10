@@ -1,13 +1,13 @@
 box: openjdk:8-jdk
 
 
-Build:
+build:
   steps:
     - java/gradle:
       task: build -x test
       cache_project_cache: true
 
-Test:
+test:
   steps:
     - java/gradle:
       task: test
