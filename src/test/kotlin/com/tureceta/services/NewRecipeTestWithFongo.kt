@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @SpringBootTest
-abstract class TuRecetaTestWithFongo(val initializeTestData: Boolean = true) {
+abstract class NewRecipeTestWithFongo(val initializeTestData: Boolean = true) {
     @get:Rule
     val fongoRule = FongoRule()
 

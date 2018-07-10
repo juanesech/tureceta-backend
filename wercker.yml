@@ -12,7 +12,10 @@ build:
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
-    # https://github.com/wercker/step-gradle
     - java/gradle:
       task: build -x test
+      cache_project_cache: true
+
+    - java/gradle:
+      task: test
       cache_project_cache: true
