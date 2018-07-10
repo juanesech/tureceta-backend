@@ -10,7 +10,7 @@ build:
 test:
   steps:
     - java/gradle:
-      task: test
+      task: test jacocoTestReport
       cache_project_cache: true
     - script:
       name: "Code Coverage"
