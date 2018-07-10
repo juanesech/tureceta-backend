@@ -17,4 +17,5 @@ test:
       code: |
           env
           wget $CODACY_JAR
+          ls -lrt
           java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT
