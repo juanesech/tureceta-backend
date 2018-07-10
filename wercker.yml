@@ -16,4 +16,5 @@ test:
       name: "Code Coverage"
       code: |
           env
+          wget $CODACY_JAR
           java -jar codacy-coverage-reporter-assembly-${COVER_VERSION}.jar report -l Java -r build/jacoco/test.exec
