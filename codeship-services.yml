@@ -1,0 +1,5 @@
+gradle:
+  build:
+    image: gradle:4.8-jdk8
+  environment:
+    EXAMPLE_ENV_VAR: example-var

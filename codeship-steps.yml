@@ -1,0 +1,7 @@
+- name: build
+  service: gradle
+  command: gradle clean build -x test
+
+- name: test
+  service: gradle
+  command: gradle test jacocoTestReport
