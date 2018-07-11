@@ -7,6 +7,8 @@ WORKDIR /app
 
 # Copying all gradle files necessary to install gradle with gradlew
 COPY gradle gradle
+COPY gradlew ./
+
 # Install the gradle version used in the repository through gradlew
 RUN ./gradlew
 
