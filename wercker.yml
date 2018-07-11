@@ -15,6 +15,6 @@ test:
           wget $CODACY_JAR
           ./gradlew test jacocoTestReport
           cd $WERCKER_CACHE_DIR
-          ls -lrt build/reports/jacoco/*
+          ls -lrt *
           java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT
       cache_project_cache: true
