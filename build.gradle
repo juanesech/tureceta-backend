@@ -54,6 +54,7 @@ dependencies {
 
 jacocoTestReport {
 	reports {
-		xml.destination file("${buildDir}/jacoco")
+		xml.enabled true
+		xml.destination file("${buildDir}/reports/jacoco/test/jacocoTestReport.xml")
 	}
 }

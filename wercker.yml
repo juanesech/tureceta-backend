@@ -13,6 +13,6 @@ test:
       code: |
           env
           wget $CODACY_JAR
-          ./gradlew clean test jacocoTestReport
+          ./gradlew test jacocoTestReport
           java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT
       cache_project_cache: true
