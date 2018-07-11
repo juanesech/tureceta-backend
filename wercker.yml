@@ -14,5 +14,5 @@ test:
           env
           wget $CODACY_JAR
           ./gradlew test jacocoTestReport
-          java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT
+          java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT -t $CODACY_PROJECT_TOKEN
       cache_project_cache: true
