@@ -1,6 +1,5 @@
 box: openjdk:8-jdk
 
-
 build:
   steps:
     - java/gradle:
@@ -14,7 +13,7 @@ test:
       code: |
           env
           wget $CODACY_JAR
-          gradle test
+          ./gradlew test
           ls -lrt
           java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT
       cache_project_cache: true
