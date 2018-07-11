@@ -13,6 +13,6 @@ COPY gradlew gradlew
 RUN ./gradlew
 
 # Run gradle assemble to install dependencies before adding the whole repository
-RUN gradle assemble
+RUN gradlew assemble
 
 ADD . ./
