@@ -56,6 +56,6 @@ jacocoTestReport {
 	reports {
 		xml.enabled true
 		xml.destination file("${buildDir}/reports/jacoco/test/jacocoTestReport.xml")
-		sourceDirectories = files("src/main/kotlin")
+		sourceDirectories = files("src/main/kotlin/")
 	}
 }
