@@ -53,8 +53,7 @@ dependencies {
 }
 
 task codeCoverageReport(type: JacocoReport) {
-	classDirectories fileTree(dir: "build/classes")
-	sourceDirectories fileTree(dir: "src/main/kotlin")
+
 	executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/*.exec")
 
 	subprojects.each {
@@ -66,6 +65,8 @@ task codeCoverageReport(type: JacocoReport) {
 		xml.destination file("${buildDir}/reports/jacoco/report.xml")
 		html.enabled false
 		csv.enabled false
+		sourceDirectories = fileTree(dir: "src/main/kotlin/")
+		classDirectories = fileTree(dir: "build/classes")
 	}
 }
 
