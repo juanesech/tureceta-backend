@@ -53,6 +53,7 @@ dependencies {
 }
 
 task codeCoverageReport(type: JacocoReport) {
+	sourceDirectories "src/main/kotlin/"
 	executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/*.exec")
 
 	subprojects.each {
