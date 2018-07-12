@@ -5,4 +5,3 @@ gradle:
   environment:
     CODACY_PROJECT_TOKEN: 1e549858fcc54bf991fa37be556c7f07
     COVER_VERSION: 4.0.1
-    CODACY_JAR: "https://github.com/codacy/codacy-coverage-reporter/releases/download/${COVER_VERSION}/codacy-coverage-reporter-${COVER_VERSION}-assembly.jar"
