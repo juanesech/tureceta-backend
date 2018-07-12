@@ -5,6 +5,5 @@
 - name: test
   service: gradle
   command: |
-    wget https://github.com/codacy/codacy-coverage-reporter/releases/download/${COVER_VERSION}/codacy-coverage-reporter-${COVER_VERSION}-assembly.jar
     ./gradlew test jacocoTestReport
     java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT -t $CODACY_PROJECT_TOKEN
