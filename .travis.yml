@@ -7,6 +7,6 @@ script:
   - ./gradlew clean build
   - ./gradlew codeCoverageReport
   - wget https://github.com/codacy/codacy-coverage-reporter/releases/download/4.0.1/codacy-coverage-reporter-4.0.1-assembly.jar
-  - java -jar codacy-coverage-reporter-4.0.1-assembly.jar report -l Java -r reports/jacoco/report.xml -t 1e549858fcc54bf991fa37be556c7f07
+  - java -jar codacy-coverage-reporter-4.0.1-assembly.jar report -l Java -r build/reports/jacoco/report.xml -t 1e549858fcc54bf991fa37be556c7f07
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 8df6966e-5f0b-45ce-a74e-1c61f3fbc69f
