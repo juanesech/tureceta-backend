@@ -1,0 +1,18 @@
+box: openjdk:8-jdk
+
+build:
+  steps:
+    - java/gradle:
+      task: clean build -x test
+      cache_project_cache: true
+
+test:
+  steps:
+   - script:
+      name: "Code Coverage"
+      code: |
+          env
+          wget $CODACY_JAR
+          ./gradlew test jacocoTestReport
+          java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT -t $CODACY_PROJECT_TOKEN
+      cache_project_cache: true

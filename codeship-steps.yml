@@ -1,8 +1,0 @@
-- name: build
-  service: gradle
-  command: ./gradlew clean build
-
-- name: test
-  service: gradle
-  command: |
-    java -jar codacy-coverage-reporter-4.0.1-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml -t 1e549858fcc54bf991fa37be556c7f07
