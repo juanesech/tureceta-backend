@@ -2,6 +2,9 @@
 # Take a look at the available versions so you can specify the Java version you want to use.
 FROM java:openjdk-8-jdk
 
+RUN apt-get update
+RUN apt-get install -y wget
+
 # Set the WORKDIR. All following commands will be run in this directory.
 WORKDIR /app
 
