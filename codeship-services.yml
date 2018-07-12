@@ -4,3 +4,4 @@ gradle:
     dockerfile: DockerfileGradle
   environment:
     CODACY_PROJECT_TOKEN: 1e549858fcc54bf991fa37be556c7f07
+    COVER_VERSION: 4.0.1

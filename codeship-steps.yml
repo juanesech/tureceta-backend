@@ -4,5 +4,4 @@
 
 - name: test
   service: gradle
-  command: |
-    java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT -t $CODACY_PROJECT_TOKEN
+  command: java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT -t $CODACY_PROJECT_TOKEN
