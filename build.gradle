@@ -65,7 +65,3 @@ task codeCoverageReport(type: JacocoReport) {
 		classDirectories = fileTree(dir: "build/classes")
 	}
 }
-
-codeCoverageReport.dependsOn {
-	subprojects*.test
-}
