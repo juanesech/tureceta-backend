@@ -62,6 +62,6 @@ task codeCoverageReport(type: JacocoReport) {
 		html.enabled false
 		csv.enabled false
 		sourceDirectories = fileTree(dir: "src/main/kotlin/")
-		classDirectories = fileTree(dir: "build/classes")
+		classDirectories = fileTree(dir: "build/classes/kotlin/main")
 	}
 }
