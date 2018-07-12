@@ -1,9 +1,9 @@
 - name: build
   service: gradle
-  command: ./gradlew clean build -x test
+  command: echo build#./gradlew clean build -x test
 
 - name: test
   service: gradle
   command: |
-    ./gradlew test
+    ./gradlew clean build
     java -jar codacy-coverage-reporter-${COVER_VERSION}-assembly.jar report -l Java -r $JACOCO_REPORT -t $CODACY_PROJECT_TOKEN
