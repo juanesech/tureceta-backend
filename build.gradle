@@ -24,6 +24,10 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
 
+plugins {
+  id "org.sonarqube" version "2.6"
+}
+
 group = 'com.wolniewicz'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
