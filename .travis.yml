@@ -6,10 +6,7 @@ before_script:
 script:
   - ./gradlew clean build
   - ./gradlew codeCoverageReport
-  - ./gradlew sonarqube \
-      -Dsonar.organization=juanesech-github \
-      -Dsonar.host.url=https://sonarcloud.io \
-      -Dsonar.login=4b92a7323630810b25bc95d7e61beac7019444c2
+  - ./gradlew sonarqube -Dsonar.organization=juanesech-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=4b92a7323630810b25bc95d7e61beac7019444c2
   - wget https://github.com/codacy/codacy-coverage-reporter/releases/download/4.0.1/codacy-coverage-reporter-4.0.1-assembly.jar
   - java -jar codacy-coverage-reporter-4.0.1-assembly.jar report -l Java -r build/reports/jacoco/report.xml -t 1e549858fcc54bf991fa37be556c7f07
 after_success:
