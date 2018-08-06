@@ -33,7 +33,7 @@ apply plugin: 'org.sonarqube'
 
 sonarqube {
 	properties {
-		property "sonar.jacoco.reportPath" "build/jacoco/test.exec"
+		property "sonar.jacoco.reportPath", "build/jacoco/test.exec"
 	}
 }
 sourceCompatibility = 1.8
