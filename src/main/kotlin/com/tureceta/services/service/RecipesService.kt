@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 interface RecipesService {
-    //fun list() : List<Recipes>
     fun new(name: String, instructions: String, ingredients: List<Ingredients>): String
 }
 
