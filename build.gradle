@@ -36,7 +36,10 @@ sonarqube {
 		property "sonar.jacoco.reportPath", "build/jacoco/test.exec"
 		property "sonar.projectKey", "tureceta-backend"
 		property "sonar.projectName", "TuReceta Backend"
-		property "sonar.junit.reportPaths", "build/reports/test"
+		property "sonar.junit.reportPaths", "build/reports/tests/test"
+		property "sonar.projectBaseDir", "."
+		property "sonar.sources", "src/main/kotlin"
+		property "sonar.tests", "src/test/kotlin"
 	}
 }
 sourceCompatibility = 1.8
