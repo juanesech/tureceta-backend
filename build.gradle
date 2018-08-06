@@ -34,6 +34,9 @@ apply plugin: 'org.sonarqube'
 sonarqube {
 	properties {
 		property "sonar.jacoco.reportPath", "build/jacoco/test.exec"
+		property "sonar.projectKey", "tureceta-backend"
+		property "sonar.projectName", "TuReceta Backend"
+		property "sonar.junit.reportPaths", "build/reports/test"
 	}
 }
 sourceCompatibility = 1.8
