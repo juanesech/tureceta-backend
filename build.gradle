@@ -30,8 +30,12 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
 apply plugin: 'org.sonarqube'
 
-group = 'com.wolniewicz'
-version = '0.0.1-SNAPSHOT'
+
+sonarqube {
+	properties {
+		property "sonar.jacoco.reportPath" "build/jacoco/test.exec"
+	}
+}
 sourceCompatibility = 1.8
 compileKotlin {
 	kotlinOptions.jvmTarget = "1.8"
